@@ -43,3 +43,21 @@ The following are commonly understood to be the 'standard set' of skills everyon
 ## Complimentary Skils to the above
 
 The following are in this repo and are written to compliment the Basic Skills Set above.
+
+**accessibility-checker**
+Check HTML pages for accessibility issues and WCAG 2.1 AA compliance.
+
+**code-documentation**
+Generates comprehensive code documentation following JSDoc standards. Use when writing documentation, adding docstrings, or documenting APIs.
+
+**code-review**
+Comprehensive code review following standards. Use when reviewing pull requests, auditing code quality, or preparing code for production deployment.
+
+**form-validator**
+Implement client-side form validation. Automatically loads when adding form validation, handling form errors, or improving form UX.
+
+**nextjs-frontend**
+Use this skill whenever building, editing, or reviewing frontend code in a Next.js project.
+
+**ux-motion**
+Expert motion design and animation implementation for web and mobile interfaces.
