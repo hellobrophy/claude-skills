@@ -29,7 +29,7 @@ There's a whole bunch of skills related info, recommendations and tutorials on t
 
 The following are commonly understood to be the 'standard set' of skills everyone should have.
 
-### Anthropc Development Skills
+### Anthropic Development Skills
 
 - **[frontend-design](https://github.com/anthropics/skills/blob/main/skills/frontend-design)** - Instructs Claude to avoid "AI slop" or generic aesthetics and to make bold design decisions. Works very well for React & Tailwind.
 - **[web-artifacts-builder](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder)** - Build complex claude.ai HTML artifacts using React, Tailwind CSS, and shadcn/ui components
@@ -44,20 +44,14 @@ The following are commonly understood to be the 'standard set' of skills everyon
 
 The following are in this repo and are written to compliment the Basic Skills Set above.
 
-**accessibility-checker**
-Check HTML pages for accessibility issues and WCAG 2.1 AA compliance.
+**[accessibility-checker](https://github.com/hellobrophy/claude-skills/tree/main/accessibility-checker)** - Check HTML pages for accessibility issues and WCAG 2.1 AA compliance.
 
-**code-documentation**
-Generates comprehensive code documentation following JSDoc standards. Use when writing documentation, adding docstrings, or documenting APIs.
+**[code-documentation](https://github.com/hellobrophy/claude-skills/tree/main/code-documentation)** - Generates comprehensive code documentation following JSDoc standards. Use when writing documentation, adding docstrings, or documenting APIs.
 
-**code-review**
-Comprehensive code review following standards. Use when reviewing pull requests, auditing code quality, or preparing code for production deployment.
+**[code-review](https://github.com/hellobrophy/claude-skills/tree/main/code-review)** - Comprehensive code review following standards. Use when reviewing pull requests, auditing code quality, or preparing code for production deployment.
 
-**form-validator**
-Implement client-side form validation. Automatically loads when adding form validation, handling form errors, or improving form UX.
+**[form-validator](https://github.com/hellobrophy/claude-skills/tree/main/form-validator)** - Implement client-side form validation. Automatically loads when adding form validation, handling form errors, or improving form UX.
 
-**nextjs-frontend**
-Use this skill whenever building, editing, or reviewing frontend code in a Next.js project.
+**[nextjs-frontend](https://github.com/hellobrophy/claude-skills/tree/main/nextjs-frontend)** - Use this skill whenever building, editing, or reviewing frontend code in a Next.js project.
 
-**ux-motion**
-Expert motion design and animation implementation for web and mobile interfaces.
+**[ux-motion](https://github.com/hellobrophy/claude-skills/tree/main/ux-motion)** - Expert motion design and animation implementation for web and mobile interfaces.
