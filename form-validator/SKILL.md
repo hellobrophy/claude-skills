@@ -51,6 +51,7 @@ function isRequired(value) {
     class="form-input"
     required
     aria-describedby="email-error"
+    aria-invalid="false"
   />
   <span class="form-error" id="email-error" role="alert"></span>
 </div>
@@ -62,6 +63,7 @@ function isRequired(value) {
 function showError(field, message) {
   const errorEl = document.getElementById(`${field.id}-error`);
   field.classList.add("is-invalid");
+  field.setAttribute("aria-invalid", "true");
   if (errorEl) {
     errorEl.textContent = message;
   }
@@ -70,6 +72,7 @@ function showError(field, message) {
 function clearError(field) {
   const errorEl = document.getElementById(`${field.id}-error`);
   field.classList.remove("is-invalid");
+  field.setAttribute("aria-invalid", "false");
   if (errorEl) {
     errorEl.textContent = "";
   }

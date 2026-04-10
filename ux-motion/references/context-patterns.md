@@ -2,6 +2,8 @@
 
 Motion adapts to context. These are example product types to illustrate how motion personality changes based on what you are building. Real projects may blend multiple profiles or fall outside these categories entirely. The principle is always the same: understand the product context first, then choose motion that reinforces it.
 
+> **Note on code examples below:** Hardcoded values (e.g. `8px`, `24px`, `#ccc`) are used for clarity. In production code, replace these with design tokens from `tokens.css` (e.g. `var(--radius-md)`, `var(--space-6)`, `var(--color-border)`) per the project's CSS conventions.
+
 ## Table of Contents
 
 1. [Banking and Fintech](#banking-and-fintech)

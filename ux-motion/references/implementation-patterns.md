@@ -2,6 +2,8 @@
 
 Code patterns for each major animation tool. Choose based on your project's framework and needs.
 
+> **Note on code examples below:** Hardcoded values (e.g. `8px`, `24px`, `#ccc`) are used for clarity. In production code, replace these with design tokens from `tokens.css` (e.g. `var(--radius-md)`, `var(--space-6)`, `var(--color-border)`) per the project's CSS conventions.
+
 ## Table of Contents
 
 1. [CSS Transitions](#css-transitions)

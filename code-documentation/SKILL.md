@@ -14,22 +14,42 @@ When asked to document code:
 3. Write descriptions that explain the "why," not just the "what"
 4. Add @throws annotations for functions that can throw
 
-## Example
+### TypeScript projects
 
-For a function like:
-```javascript
-function calculateDiscount(price, percentage) {
-  return price * (1 - percentage / 100);
-}
+When the codebase uses TypeScript, omit JSDoc type annotations (`{number}`, `{string}`, etc.) — the types are already in the signature. Keep only the descriptions:
 
-Generate:
+```typescript
 /**
  * Calculates the discounted price based on a percentage reduction.
  * Useful for applying promotional discounts at checkout.
- * 
+ *
+ * @param price - Original price before discount
+ * @param percentage - Discount percentage (0-100)
+ * @returns The price after applying the discount
+ * @example
+ * calculateDiscount(100, 20) // Returns 80
+ */
+function calculateDiscount(price: number, percentage: number): number {
+  return price * (1 - percentage / 100);
+}
+```
+
+### JavaScript projects
+
+Include full JSDoc type annotations when there is no TypeScript:
+
+```javascript
+/**
+ * Calculates the discounted price based on a percentage reduction.
+ * Useful for applying promotional discounts at checkout.
+ *
  * @param {number} price - Original price before discount
  * @param {number} percentage - Discount percentage (0-100)
  * @returns {number} The price after applying the discount
  * @example
  * calculateDiscount(100, 20) // Returns 80
  */
+function calculateDiscount(price, percentage) {
+  return price * (1 - percentage / 100);
+}
+```

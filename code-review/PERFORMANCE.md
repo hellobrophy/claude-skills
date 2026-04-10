@@ -127,14 +127,14 @@ container.addEventListener('click', (e) => {
 ### Avoid Expensive Selectors
 
 ```css
-/* BAD: Universal and deep selectors */
-* { box-sizing: border-box; }
+/* BAD: Deep descendant chains */
 .container div span a { color: blue; }
 
 /* GOOD: Specific, shallow selectors */
-*, *::before, *::after { box-sizing: border-box; } /* Only at root */
 .nav__link { color: blue; }
 ```
+
+Note: `*, *::before, *::after { box-sizing: border-box; }` in a global reset is fine — it runs once and the performance cost is negligible. The concern is deep *descendant* selectors that force the browser to match against many elements on every reflow.
 
 ### Minimize Repaints
 
@@ -152,8 +152,10 @@ container.addEventListener('click', (e) => {
 
 ### Use `will-change` Sparingly
 
+Apply `will-change` only to elements that will actually animate, and remove it after the animation completes. Each promoted layer consumes GPU memory.
+
 ```css
-/* Only when animation is imminent */
+/* Apply just before animation, remove after */
 .card:hover {
   will-change: transform;
 }
@@ -161,6 +163,8 @@ container.addEventListener('click', (e) => {
 .card.animating {
   transform: scale(1.05);
 }
+
+/* Do NOT apply will-change to many elements permanently */
 ```
 
 ## Memory Management

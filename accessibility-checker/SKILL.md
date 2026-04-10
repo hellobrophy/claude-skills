@@ -51,7 +51,7 @@ This skill provides guidance for checking and improving web accessibility.
 <img src="logo.png" alt="NovaTech Solutions logo" />
 
 <!-- Decorative (empty alt is intentional) -->
-<img src="decoration.png" alt="" role="presentation" />
+<img src="decoration.png" alt="" aria-hidden="true" />
 ```
 
 ### Forms
@@ -74,9 +74,10 @@ This skill provides guidance for checking and improving web accessibility.
 
 <!-- Use landmarks -->
 <nav aria-label="Main navigation">
-  <main id="main-content">
-    <footer></footer>
-  </main>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
 </nav>
 ```
 

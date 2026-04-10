@@ -121,7 +121,7 @@ export { Button } from "./Button";
 - No `<div>` or `<span>` where a semantic element fits.
 - Use `<button>` for actions, `<a>` for navigation. Never use a `<div>` as a button.
 - All interactive elements must be keyboard-focusable and have a visible focus state.
-- **Images**: always provide `alt`. Decorative images use `alt=""` and `aria-hidden="true"`.
+- **Images**: always provide `alt`. Decorative images use `alt=""` and `role="presentation"`.
 - **ARIA**: use only when native semantics aren't sufficient. Prefer native HTML first.
   Common correct uses: `aria-label`, `aria-labelledby`, `aria-describedby`, `aria-expanded`,
   `aria-controls`, `aria-live` for dynamic regions, `role="status"` for polite updates.
